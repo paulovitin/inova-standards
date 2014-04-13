@@ -1,0 +1,19 @@
+{
+    "bold_folder_labels": true,
+    "color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+    "theme": "Spacegray.sublime-theme",
+    "default_line_ending": "unix",
+    "highlight_line": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "word_wrap": true,
+    "wrap_width": 120,
+    "rulers": [
+        80
+    ]
+}
