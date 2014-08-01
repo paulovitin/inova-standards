@@ -14,25 +14,6 @@ if(isset($_SESSION["id"]) == 0) {
 } else {
 	header("Location: index.php");
 }
-
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
-
-$splash = array('field.jpg', 'nature.jpg', 'poppy.jpg', 'tulip.jpg');
-
-
-$imagens = [];
-
-$diretorio = new DirectoryIterator('splashPage/images/');
-
-foreach ($diretorio as $arquivo) {
-	
-	if($arquivo->getFileName() == '..' || $arquivo->getFileName() == '.') { continue; }
-
-	$imagens[] = $arquivo->getFileName();
-
-}
-$quantidade_imagens = count($imagens);
-$atual = rand(0, $quantidade_imagens - 1);
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="pt-br">
